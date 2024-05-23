@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations Example</title>
+    <style>
+        .disappear {
+            animation: disappear 2s forwards;
+        }
+        @keyframes disappear {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .slide-in {
+            animation: slide-in 2s;
+        }
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .rotate {
+            animation: rotate 2s infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .typewriter {
+            animation: typewriter 2s;
+        }
+        @keyframes typewriter {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="document.getElementById('disappearing-element').classList.add('disappear')">Make it disappear!</button>
+    <div id="disappearing-element">
+        <h1>I'm going to disappear!</h1>
+    </div>
+    <p class="slide-in">Slide-in Animation</p>
+    <div class="rotate">
+        <img src="rotate.jpg" alt="Rotate Icon">
+    </div>
+    <button class="pulse">Pulse Animation</button>
+    <div class="typewriter">
+        <p>This is a typewriter effect</p>
+    </div>
+    <div class="bounce">
+        <img src="bounce.jpg" alt="Bounce Icon">
+    </div>
+</body>
+</html>

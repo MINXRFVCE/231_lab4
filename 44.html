@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .static {
+            position: static;
+            width: 150px;
+            height: 150px;
+            background-color: #8ed28c;
+        }
+
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+            background-color:limegreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 150px;
+            height: 150px;
+            background-color:darkgreen;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-color:chocolate;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+
+        }
+
+        .float-left {
+            float: left;
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+            margin-right: 10px;
+        }
+
+        .float-right {
+            float: right;
+            width: 150px;
+            height: 150px;
+            background-color:aqua;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">Fixed</div>
+        <div class="sticky">Sticky</div>
+        <div class="float-left"></div>
+        <div class="float-right"></div>
+    </div>
+</body>
+</html>

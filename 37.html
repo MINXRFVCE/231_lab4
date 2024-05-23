@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button with CSS</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-header {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-content {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+          <h2 class="item-header">Заголовок 1</h2>
+          <div class="item-content">
+            Контент элемента 1...
+          </div>
+        </div>
+        <div class="item">
+          <h2 class="item-header">Заголовок 2</h2>
+          <div class="item-content">
+            Контент элемента 2...
+          </div>
+        </div>
+      </div>
+</body>
+</html>
